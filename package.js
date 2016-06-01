@@ -1,10 +1,10 @@
 /* global Package, Npm */
 
 Package.describe({
-  name: 'aldeed:tabular',
+  name: 'wbratches:tabular',
   summary: 'Datatables for large or small datasets in Meteor',
   version: '1.5.5',
-  git: 'https://github.com/aldeed/meteor-tabular.git'
+  git: 'https://github.com/william-bratches/meteor-tabular.git'
 });
 
 Npm.depends({
@@ -71,7 +71,7 @@ Package.onUse(function(api) {
 // Follow this guide: https://github.com/awatson1978/meteor-cookbook/blob/master/cookbook/writing.unit.tests.md
 Package.onTest(function(api) {
   // Tiny Test
-  api.use(['aldeed:tabular', 'tinytest']);
+  api.use(['wbratches:tabular', 'tinytest']);
   api.use([
     'anti:fake',
     'check',
