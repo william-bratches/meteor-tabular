@@ -227,6 +227,7 @@ var tabularOnRendered = function () {
     var tableName = template.tabular.tableName.get();
     var collection = template.tabular.collection.get();
     var tableInfo = Tabular.getRecord(tableName, collection) || {};
+    var data = Template.currentData();
 
     //console.log('tableName and tableInfo autorun', tableName, tableInfo);
 
@@ -263,6 +264,7 @@ var tabularOnRendered = function () {
   template.autorun(function (c) {
     var userOptions = template.tabular.options.get();
     var options = _.extend({}, ajaxOptions, userOptions);
+    var data = Template.currentData();
 
     //console.log('userOptions autorun', options);
 
@@ -302,6 +304,7 @@ var tabularOnRendered = function () {
     var collection = Tracker.nonreactive(function () {
       return template.tabular.collection.get();
     });
+    var data = Template.currentData();
 
     // React when the requested list of records changes.
     // This can happen for various reasons.
