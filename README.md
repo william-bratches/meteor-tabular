@@ -1,3 +1,8 @@
+# Description
+This fixes reactive selectors not updating properly from the aldeed:tabular package.
+
+# Readme
+
 aldeed:tabular
 =========================
 

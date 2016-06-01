@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'wbratches:tabular',
-  summary: 'Aldeed package, but fixed for reactive selectors',
+  summary: 'Fixed reactive selectors',
   version: '1.5.5',
   git: 'https://github.com/william-bratches/meteor-tabular.git'
 });
