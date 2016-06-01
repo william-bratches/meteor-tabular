@@ -200,6 +200,7 @@ var tabularOnRendered = function () {
     if (!template.tabular.ready.get()) {
       return;
     }
+    var data = Template.currentData();
 
     //console.log('tabular_getInfo autorun');
 

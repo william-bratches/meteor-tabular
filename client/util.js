@@ -64,12 +64,12 @@ Util.getMongoSort = function getMongoSort(order, columns) {
     if (columns[ord.column].options !== undefined
       && typeof(columns[ord.column].options.sortfield) === 'string') {
       var propName = columns[ord.column].options.sortfield;
-      console.log('Set SortField:');
-      console.log(propName);
+      // console.log('Set SortField:');
+      // console.log(propName);
     } else {
       var propName = columns[ord.column].query;
-      console.log('Else:');
-      console.log(propName);
+      // console.log('Else:');
+      // console.log(propName);
     }
     var propNames = propName.split(' ');
     // Ignore instance functions like "foo()"

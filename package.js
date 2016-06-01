@@ -2,7 +2,7 @@
 
 Package.describe({
   name: 'wbratches:tabular',
-  summary: 'Datatables for large or small datasets in Meteor',
+  summary: 'Aldeed package, but fixed for reactive selectors',
   version: '1.5.5',
   git: 'https://github.com/william-bratches/meteor-tabular.git'
 });

@@ -1,7 +1,9 @@
 /* global Tabular, Mongo */
 
 // We are creating a named client Collection that we will only modify from server
-Tabular.tableRecords = new Mongo.Collection('tabular_records');
+if (Tabular.tableRecords && Tabular.tableRecords._name !== "tabular_records") {
+  Tabular.tableRecords = new Mongo.Collection('tabular_records');
+}
 Tabular.remoteTableRecords = [];
 
 Tabular.getRecord = function(name, collection) {
