@@ -21,7 +21,7 @@ Package.onUse(function(api) {
     'templating',
     'reactive-var',
     'tracker',
-    'ecmascript'
+    'ecmascript@0.1.6'
   ]);
 
   // jquery is a weak reference in case you want to use a different package or
@@ -78,7 +78,7 @@ Package.onTest(function(api) {
     'underscore',
     'reactive-var',
     'tracker',
-    'ecmascript'
+    'ecmascript@0.1.6'
   ]);
 
   // Load this first:
